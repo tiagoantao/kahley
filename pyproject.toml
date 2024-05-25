@@ -28,7 +28,7 @@ pretty = true
 show_column_numbers = true
 show_error_context = true
 
-[tool.ruff]
+[tool.ruff.lint]
 select = [
   "E", "W", # pycodestyle
   "F",      # pyflakes
@@ -50,4 +50,9 @@ select = [
   "PLE",    # pylint-error
   "NPY",    # numpy
   "RUF",    # ruff
+]
+
+ignore = [
+  "D203",
+  "D212"
 ]
